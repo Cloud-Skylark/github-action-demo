@@ -10,9 +10,9 @@ jobs:
         uses: actions/checkout@v2.8.0
 
       - name: run cmd
-        run: echo print soomething
+        run: echo " print soomething "
 
       - name: multione cmd
         run: |
-          ehco hello new line  wali cmd
-          echo one more dude nice 
+          ehco " hello new line  wali cmd "
+          echo " one more dude nice "
