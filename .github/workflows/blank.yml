@@ -1,20 +1,18 @@
 name: CI-DEMO
 on: 
-  push:
-    branches: [ "main" ]
+  workflow_dispatch
 jobs:
-  First-script:
-    runs-on: ubuntu-latest
+  second-try:
+    runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout
+      - name: chekcout
         uses: actions/checkout@v2.8.0
 
-      - name: Run a one-line script
-        run:  echo " hey this is first script "
+      - name: run cmd
+        run: echo print soomething
 
-      - name: run addition commands
+      - name: multione cmd
         run: |
-          echo " This is multi line commnad "
-          echo " second line cmd
-    
+          ehco hello new line  wali cmd
+          echo one more dude nice 
