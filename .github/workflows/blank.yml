@@ -1,0 +1,20 @@
+name: CI-DEMO
+on: 
+  push:
+    branches: [ "main" ]
+jobs:
+  First-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.8.0
+
+      - name: Run a one-line script
+        run:  echo " hey this is first script "
+
+      - name: run addition commands
+        run: |
+          echo " This is multi line commnad "
+          echo " second line cmd
+    
