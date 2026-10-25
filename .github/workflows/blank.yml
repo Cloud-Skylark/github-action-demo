@@ -1,18 +1,21 @@
+
 name: CI-DEMO
-on: 
-  workflow_dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
   second-try:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: chekcout
-        uses: actions/checkout@v2.8.0
+      - name: checkout
+        uses: actions/checkout@v4
 
       - name: run cmd
-        run: echo " print soomething "
+        run: echo "print something"
 
-      - name: multione cmd
+      - name: multiple cmd
         run: |
-          ehco " hello new line  wali cmd "
-          echo " one more dude nice "
+          echo "hello new line wali cmd"
+          echo "one more dude nice"
